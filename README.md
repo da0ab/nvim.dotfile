@@ -13,6 +13,13 @@ my nvim
 
 ```
 
+
+```
+chmod +x nvim-restore.sh
+./nvim-restore.sh
+
+```
+
 ```
 git clone https://github.com/neovim/neovim.git
 cd neovim
