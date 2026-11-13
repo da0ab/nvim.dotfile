@@ -13,13 +13,23 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+vim.opt.mouse = "a"
+vim.opt.clipboard = "unnamed,unnamedplus"
+vim.keymap.set('v', '<LeftRelease>', '"*ygv', { desc = "Copy on mouse release" })
+
+vim.opt.relativenumber = true
+vim.opt.statuscolumn = "%#LineNr#%{v:lnum} %#CursorLineNr#%{v:relnum?v:relnum:''} "                 
+vim.api.nvim_set_hl(0, "LineNr", { fg = "#4C566A" })
+
+
 require("core.options")
 require("core.keymaps")
 require("core.html_keymaps")
 require("core.html_snippets")
 require("core.html_wrapper")
 require("lazy").setup("plugins")
-vim.cmd.colorscheme("puerh")
+--vim.cmd("colorscheme dracula")
+--vim.api.nvim_set_hl(0, "Normal", { bg = "#1e1e2e" })
 
 -- Маппинг для русского языка
 local ru_to_en_upper = "ФИСВУАПРШОЛДЬТЩЗЙКЫЕГМЦЧНЯ"
