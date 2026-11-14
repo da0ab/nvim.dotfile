@@ -13,6 +13,12 @@ my nvim
 
 ```
 
+leader ``Space``
+
+nnn ``Space n``
+
+save ``F1``
+
 
 ```
 chmod +x nvim-restore.sh
