@@ -21,6 +21,7 @@ my nvim
 <Space>sh   — горизонтальный сплит
 <Space>st   — терминал в сплите
 <Space>n    — nnn   
+<Space>rr   — поиск замена   
 <Space>j    — PageDown
 <Space>k    — PageUp
 <Space>2    — выделить строку без пробелов
@@ -28,6 +29,7 @@ my nvim
 <Space>4    — выделить тег полностью
 <Space>5    — удалить пустые строки
 <Space>6    — схлопнуть пустые строки
+<Space>0    — вставка из словаря сниппетов 
 <Space>a    — выделить всё
 <C-a>       — выделить всё
 <C-d>       — дублировать строку/выделение
@@ -81,8 +83,8 @@ sc    — /* */
 sx    — /* ---- ---- */
 
 sq    — «»
-det   — <details><summary>Заголовок</summary>
-sum   — <details><summary>... (опечатка в коде)
+det   — <details><summary>Вокруз текста без заголовка
+sum   — <details><summary>Вокруг заголовка
 
 ```
 

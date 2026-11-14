@@ -29,9 +29,7 @@ keymap("v", "sc", 'c/*<C-r>"*/<Esc>', opt)
 keymap("v", "sx", 'c/*-------------------- <C-r>" --------------------*/<Esc>', opt)
 
 keymap("v", "det", 'c<details><summary>Заголовок</summary><CR><C-r>"<CR></details><Esc>', opt)
---keymap("v", "sum", "c<details><summary><C-r></summary><CR></details><Esc>", opt)
 keymap("v", "sum", 'c<details><summary><C-r>"</summary><CR><CR></details><Esc>', opt)
---keymap("v", "sa", 'c<a href=""><C-r>"</a><Esc>F"i', opt)
 keymap("v", "s@", 'c<a href="mailto:<C-r>"">mailto:<C-r>"</a><Esc>', opt)
 
 -- WEB LINKS
@@ -41,10 +39,9 @@ keymap("v", "saa", 'c<a href="<C-r>""><C-r>"</a><Esc>', opt)
 keymap("v", "sat", 'c<a href="" target="_blank" rel="nofollow"><C-r>"</a><Esc>?href<CR>f"l', opt)
 keymap("v", "saat", 'c<a href="https://<C-r>"" target="_blank" rel="nofollow"><C-r>"</a><Esc>', opt)
 keymap("v", "st", 'c<a href="tel:<C-r>=substitute(@", "[ -]", "", "g")<CR>"><C-r>"</a><Esc>', opt)
---
--- Это режим "i" (Insert)
+
 keymap("i", "<C-Enter>", "<br>", opt)
-keymap("i", "<C-CR>", "<br>", opt) -- дубль для надежности
+keymap("i", "<C-CR>", "<br>", opt)
 keymap("i", "\\a", '<a id="" class="anchor"></a><Esc>F"i', opt)
 keymap("i", "\\<Space>", "&nbsp;", opt)
 keymap("i", "\\i", 'id=""<Left>', opt)
