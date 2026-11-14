@@ -39,6 +39,7 @@ my nvim
 
 ── VISUAL (обернуть выделение) ──────────────────
 
+```
 bb    — <strong>
 bbb   — <b>
 ii    — <em>
@@ -81,9 +82,11 @@ sq    — «»
 det   — <details><summary>Заголовок</summary>
 sum   — <details><summary>... (опечатка в коде)
 
+```
 
 ── INSERT (HTML) ────────────────────────────────
 
+```
 <C-Enter>  — <br>
 <C-CR>     — <br>
 \a         — <a id="" class="anchor"></a>
@@ -97,8 +100,11 @@ sum   — <details><summary>... (опечатка в коде)
 \sh        — #!/bin/bash
 \py        — #!/usr/bin/env python3 + coding
 
+```
 
 ── INSERT (CSS) ─────────────────────────────────
+
+```
 
 \w    — width:;
 \h    — height:;
@@ -109,11 +115,18 @@ sum   — <details><summary>... (опечатка в коде)
 \fw   — font-weight: bold;
 \bg   — background: transparent url(../images/) no-repeat center;
 
+```
 
 ── INSERT (прочее) ──────────────────────────────
 
+```
 \-    — –
 \ve   — ?v=0.0.1
+
+```
+
+
+##Скрипт запуска
 
 
 ```
