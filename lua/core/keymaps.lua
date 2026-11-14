@@ -28,11 +28,29 @@ keymap("v", "<C-d>", "yP", { desc = "Дублировать выделение",
 keymap("n", "<leader>j", "<PageDown>", { desc = "Прокрутка вниз (PageDown)", silent = true })
 keymap("n", "<leader>k", "<PageUp>", { desc = "Прокрутка вверх (PageUp)", silent = true })
 --Терминал в новом сплите
-keymap( "n", "<leader>st", "<cmd>vsplit | terminal<cr>", { desc = "Терминал в верт сплите", silent = true })
+keymap(
+	"n",
+	"<leader>st",
+	"<cmd>vsplit | terminal<cr>",
+	{ desc = "Терминал в верт сплите", silent = true }
+)
+keymap(
+	"n",
+	"<leader>a",
+	'ggVG"+y',
+	{ desc = "Выделить всё и скопировать в буфер", silent = true }
+)
 
 -- Выделить все (Ctrl+a)
 keymap("n", "<C-a>", "ggVG", { desc = "Select All" })
 keymap("i", "<C-a>", "<Esc>ggVG", { desc = "Select All" })
+
+keymap(
+	{ "n", "v" },
+	"<leader>a",
+	'ggVG"+ygv',
+	{ desc = "Выделить всё + копировать", silent = true, nowait = true }
+)
 
 keymap("n", "<leader>2", "^vg_", opt)
 keymap("i", "<leader>2", "<Esc>^vg_", opt)
@@ -99,4 +117,3 @@ keymap({ "n", "i", "v" }, "<leader>6", function()
 		vim.cmd("noh")
 	end
 end, { desc = "Схлопнуть пустые строки (оставить одну)", silent = true })
-

@@ -29,9 +29,9 @@ keymap("v", "sc", 'c/*<C-r>"*/<Esc>', opt)
 keymap("v", "sx", 'c/*-------------------- <C-r>" --------------------*/<Esc>', opt)
 
 keymap("v", "det", 'c<details><summary>Заголовок</summary><CR><C-r>"<CR></details><Esc>', opt)
-keymap("v", "sum", "c<details><summary><C-r></summary><CR></details><Esc>", opt)
-
-keymap("v", "sa", 'c<a href=""><C-r>"</a><Esc>F"i', opt)
+--keymap("v", "sum", "c<details><summary><C-r></summary><CR></details><Esc>", opt)
+keymap("v", "sum", 'c<details><summary><C-r>"</summary><CR><CR></details><Esc>', opt)
+--keymap("v", "sa", 'c<a href=""><C-r>"</a><Esc>F"i', opt)
 keymap("v", "s@", 'c<a href="mailto:<C-r>"">mailto:<C-r>"</a><Esc>', opt)
 
 -- WEB LINKS
