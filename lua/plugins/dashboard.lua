@@ -54,7 +54,7 @@ return {
 			type = "group",
 			val = {
 				-- А вот здесь мы используем удобную функцию из темы dashboard
-				dashboard.button("e", "  Новый файл", ":ene <BAR> startinsert <CR>"),
+				dashboard.button("n", "  Новый файл", ":ene <BAR> startinsert <CR>"),
 				dashboard.button("f", "  Найти файл", ":Telescope find_files <CR>"),
 				dashboard.button("r", "  Недавние файлы", ":Telescope oldfiles <CR>"),
 				dashboard.button("c", "  Конфигурация", ":e $MYVIMRC <CR>"),
